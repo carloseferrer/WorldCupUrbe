@@ -1,0 +1,1492 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fifa World Cup Web</title>
+
+  <!-- CSS only -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+
+<!-- CSS main -->
+<link rel="stylesheet" href="assets/css/main.css">
+
+<!-- CDN -->
+
+<!-- Font Awesome CDN -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+
+<!-- Owl Carousel Min.Css -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+<!-- Owl Carousel Theme Min.css -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+<link rel="icon" href="assets/img/fifa.png">
+
+</head>
+<body>
+  <header id="inicio">
+    <nav class="navbar navbar-expand-lg fixed-top" style="background-color: #460065;box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.5);">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#inicio">
+          <img src="assets/img/logo2.webp" alt="Bootstrap" width="auto" height="40px">
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-center" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0" >
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="#noticias">Noticias</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#grupos">Fase de Grupos</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#equipos">Equipos</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#participantes">Participantes</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contacto">Contactanos</a>
+            </li> 
+          </ul>
+          <div class="d-flex align-items-center ">
+            <a href="#contacto"><button  type="button" class="btn px-3 me-2" style="color: #ffe484; background-color: none; border: solid 1px #ffe484 ;">
+              <span>Suscribete</span>    
+            </button></a>
+        
+          </div>
+        </div>
+      </div>
+    </nav>
+  </header>
+  <div class="body">
+    <div id="carouselExampleCaptions" class="carousel slide pull-right" data-bs-ride="false" >
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img style="filter: brightness(50%) ;" src="assets/img/benzema.webp" class="d-block w-100" alt="...">
+          <div class="carousel-caption d-none d-md-block">
+            <h4>Benzema Baja de ultima hora</h4>
+            <p><b>El más reciente Balon de Oro sufrió una lesión en el biceps femoral que le impide jugar el mundial.</b></p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img style="filter: brightness(50%) ;" src="assets/img/jugadores-jovenes.webp" class="d-block w-100" alt="...">
+          <div class="carousel-caption d-none d-md-block">
+            <h5>Pedri, Enzo y Musiala</h5>
+            <p><b>Los tres jóvenes que pueden dar la sopresa en la copa del mundo.</b></p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="assets/img/fantasy.webp" class="d-block w-100" alt="...">
+          <div class="carousel-caption d-none d-md-block">
+            <h5>Fifa Fantasy</h5>
+            <p><b>Ya están disponibles las nuevas cartas fantasy edición Catar 2022.</b></p>
+          </div>
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+    <div id="noticias" class="head-noticias">
+      <h2 style="text-align:center;">Ultimas Noticias</h2>
+    </div>
+    <div class="container">
+      <div class="row">
+        <div class="col-12 col-md-6" style="border-radius: 3px ; padding-bottom: 25px;">
+          <div class="card">
+            <img src="assets/img/cristiano.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Portugal: Cristiano Ronaldo Llego a Doha</h5>
+              <p class="card-text">Cristiano y los suyos ya estan en tierras Cataries para enfrentar un nuevo mundial.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-md-6">
+          <div class="card mb-4" >
+            <div class="row g-0">
+              <div class="col-md-4">
+                <img src="assets/img/messi.webp" class="img-fluid rounded-start" alt="..." style="width: 8.9rem;">
+              </div>
+              <div class="col-md-8">
+                <div class="card-body">
+                  <h6 class="card-title" style="float: left;">Messi en Catar, el astro argentino piso suelo Catarí.</h6>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="card mb-4">
+            <div class="row g-0">
+              <div class="col-md-4">
+                <img src="assets/img/gustavoalfaro.webp" class="img-fluid rounded-start" alt="..." style="width: 8.9rem;">
+              </div>
+              <div class="col-md-8">
+                <div class="card-body">
+                  <h6 class="card-title" style="float: left;">Gustavo Alfaro, a horas del partido inaugural con Ecuador</h6>
+                </div>
+              </div>
+            </div>
+          </div> 
+          <div class="card mb-4">
+            <div class="row g-0">
+              <div class="col-md-4">
+                <img src="assets/img/VanGal.webp" class="img-fluid rounded-start" alt="..." style="width:8.9rem;">
+              </div>
+              <div class="col-md-8">
+                <div class="card-body">
+                  <h6 class="card-title" style="float:left;">Louis Van Gaal: "Quiero ganar la Copa Mundial".</h6>
+                </div>
+              </div>
+            </div>
+          </div>          
+        </div>        
+      </div>
+    </div>
+    <div id="equipos" class="head-noticias">
+      <h2 style="text-align:center;">Equipos</h2>
+    </div>
+    <div class="container-fluid my-5">
+      <div class="row">
+        <div class="owl-carousel owl-theme">
+          <div class="item mb-4">
+            <div class="card border-0" style="background-color: antiquewhite;">
+              <img src="assets/img/iran.webp" alt="" class="card-image-top" style="border-radius: 5px;">
+              <div class="card-body">
+                <h6>¿La tercera sera la vencida para la Irán de Queiroz?</h6>
+              </div>
+            </div>
+          </div>
+          <div class="item mb-4">
+            <div class="card border-0" style="background-color: antiquewhite;border-radius: 5px;">
+              <img src="assets/img/memphis.webp" alt="" class="card-image-top" >
+              <div class="card-body">
+                <h6>Paises Bajos regresa con el objetivo de redescubrir su identidad.</h6>
+              </div>
+            </div>
+          </div>
+          <div class="item mb-4">
+            <div class="card border-0" style="background-color: antiquewhite;border-radius: 5px;">
+              <img src="assets/img/Brasil.webp" alt="" class="card-image-top" >
+              <div class="card-body">
+                <h6>Un Brasil revigorizado y pujante quiere reconciliarse con los títulos.</h6>
+              </div>
+            </div>
+          </div>
+          <div class="item mb-4">
+            <div class="card border-0" style="background-color: antiquewhite;border-radius: 5px;">
+              <img src="assets/img/Uruguay.webp" alt="" class="card-image-top" >
+              <div class="card-body">
+                <h6>Uruguay y su garra Charrúa irán por el titulo en Catar 2022.</h6>
+              </div>
+            </div>
+          </div>
+          <div class="item mb-4">
+            <div class="card border-0" style="background-color: antiquewhite;border-radius: 5px;">
+              <img src="assets/img/polonia.webp" alt="" class="card-image-top" >
+              <div class="card-body">
+                <h6>Polonia y Lewandoski quieren olvidar Rusia 2018.</h6>
+              </div>
+            </div>
+          </div>
+          <div class="item mb-4">
+            <div class="card border-0" style="background-color: antiquewhite;border-radius: 5px;">
+              <img src="assets/img/argentina.webp" alt="" class="card-image-top" >
+              <div class="card-body">
+                <h6>Invicta y campeona, Argentina viaja a Catar en busca de su tercera Copa Mundial.</h6>
+              </div>
+            </div>
+          </div>
+          <div class="item mb-4">
+            <div class="card border-0" style="background-color: antiquewhite;border-radius: 5px;">
+              <img src="assets/img/francia.webp" alt="" class="card-image-top" >
+              <div class="card-body">
+                <h6>La campeona Francia, intentará defender su corona en Catar.</h6>
+              </div>
+            </div>
+          </div>
+          <div class="item mb-4">
+            <div class="card border-0" style="background-color: antiquewhite;border-radius: 5px;">
+              <img src="assets/img/croacia.webp" alt="" class="card-image-top" >
+              <div class="card-body">
+                <h6>Una experimentada Croacia busca emular exitos pasados.</h6>
+              </div>
+            </div>
+          </div>
+          <div class="item mb-4">
+            <div class="card border-0" style="background-color: antiquewhite;border-radius: 5px;">
+              <img src="assets/img/canada.webp" alt="" class="card-image-top" >
+              <div class="card-body">
+                <h6>Canada tiene un solo objetivo, sorprender al mundo.</h6>
+              </div>
+            </div>
+          </div>
+          <div class="item mb-4">
+            <div class="card border-0" style="background-color: antiquewhite;border-radius: 5px;">
+              <img src="assets/img/camerun.webp" alt="" class="card-image-top" >
+              <div class="card-body">
+                <h6>Camerún esboza un regreso prometedor.</h6>
+              </div>
+            </div>
+          </div>
+          <div class="item mb-4">
+            <div class="card border-0" style="background-color: antiquewhite;border-radius: 5px;">
+              <img src="assets/img/serbia.webp" alt="" class="card-image-top" >
+              <div class="card-body">
+                <h6>Servia en Catar: Calidad y espectáculo en la búsqueda de un resultado histórico.</h6>
+              </div>
+            </div>
+          </div>
+          <div class="item mb-4">
+            <div class="card border-0" style="background-color: antiquewhite;border-radius: 5px;">
+              <img src="assets/img/japon.webp" alt="" class="card-image-top" >
+              <div class="card-body">
+                <h6>Japón quiere alcanzar los cuartos de final.</h6>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="grupos" class="head-noticias2">
+      <h2 style="text-align:center;">Fase de Grupos</h2>
+    </div>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-4">
+          <table class="table caption-top">
+            <caption style="color:black;">Grupo A</caption>
+            <thead>
+              <tr>
+                <th style="font-size: 13px;">Equipo</th>
+                <th class="span-c" scope="col"><span>PJ</span></th>
+                <th class="span-c" scope="col"><span>G</span></th>
+                <th class="span-c" scope="col"><span>E</span></th>
+                <th class="span-c" scope="col"><span>P</span></th>
+                <th class="span-c" scope="col"><span>DG</span></th>
+                <th class="span-c" scope="col"><span>Pts</span></th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td scope="row" class="ff-pl-8">
+                  <div class="fdcp-standings-group_teamCell__JgYej">
+                    <div class="fdcp-standings-group_teamLogo__1iFVT">
+                      <img decoding="async" loading="lazy" height="auto" width="100%" src="assets/img/catar.avif" alt="" title="" class="image_img__3ckHZ">
+                      <span>QAT</span>
+                    </div>
+                  <div>
+                  </td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+                <td><b>0</b></td>
+              </tr>
+              <tr>
+                <td scope="row" class="ff-pl-8">
+                  <div class="fdcp-standings-group_teamCell__JgYej">
+                    <div class="fdcp-standings-group_teamLogo__1iFVT">
+                      <img decoding="async" loading="lazy" height="auto" width="100%" src="assets/img/ecuador.avif" alt="" title="" class="image_img__3ckHZ">
+                      <span>ECU</span>
+                    </div>
+                  <div>
+                  </td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+                <td><b>0</b></td>
+              </tr>
+              <tr>
+                <td scope="row" class="ff-pl-8">
+                  <div class="fdcp-standings-group_teamCell__JgYej">
+                    <div class="fdcp-standings-group_teamLogo__1iFVT">
+                      <img decoding="async" loading="lazy" height="auto" width="100%" src="assets/img/paisesbajos.webp" alt="" title="" class="image_img__3ckHZ">
+                      <span>NED</span>
+                    </div>
+                  <div>
+                  </td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+                <td><b>0</b></td>
+              </tr>
+              <tr>
+                <td scope="row" class="ff-pl-8">
+                  <div class="fdcp-standings-group_teamCell__JgYej">
+                    <div class="fdcp-standings-group_teamLogo__1iFVT">
+                      <img decoding="async" loading="lazy" height="auto" width="100%" src="assets/img/senegal.avif" alt="" title="" class="image_img__3ckHZ">
+                      <span>SEN</span>
+                    </div>
+                  <div>
+                  </td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+                <td><b>0</b></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="col-md-4">
+          <table class="table caption-top">
+            <caption style="color:black;">Grupo B</caption>
+            <thead>
+              <tr>
+                <th style="font-size: 13px;">Equipo</th>
+                <th class="span-c" scope="col"><span>PJ</span></th>
+                <th class="span-c" scope="col"><span>G</span></th>
+                <th class="span-c" scope="col"><span>E</span></th>
+                <th class="span-c" scope="col"><span>P</span></th>
+                <th class="span-c" scope="col"><span>DG</span></th>
+                <th class="span-c" scope="col"><span>Pts</span></th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td scope="row" class="ff-pl-8">
+                  <div class="fdcp-standings-group_teamCell__JgYej">
+                    <div class="fdcp-standings-group_teamLogo__1iFVT">
+                      <img decoding="async" loading="lazy" height="auto" width="100%" src="assets/img/eng.webp" alt="" title="" class="image_img__3ckHZ">
+                      <span>ENG</span>
+                    </div>
+                  <div>
+                  </td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+                <td><b>0</b></td>
+              </tr>
+              <tr>
+                <td scope="row" class="ff-pl-8">
+                  <div class="fdcp-standings-group_teamCell__JgYej">
+                    <div class="fdcp-standings-group_teamLogo__1iFVT">
+                      <img decoding="async" loading="lazy" height="auto" width="100%" src="assets/img/iran.avif" alt="" title="" class="image_img__3ckHZ">
+                      <span>IRN</span>
+                    </div>
+                  <div>
+                  </td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+                <td><b>0</b></td>
+              </tr>
+              <tr>
+                <td scope="row" class="ff-pl-8">
+                  <div class="fdcp-standings-group_teamCell__JgYej">
+                    <div class="fdcp-standings-group_teamLogo__1iFVT">
+                      <img decoding="async" loading="lazy" height="auto" width="100%" src="assets/img/usa.avif" alt="" title="" class="image_img__3ckHZ">
+                      <span>USA</span>
+                    </div>
+                  <div>
+                  </td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+                <td><b>0</b></td>
+              </tr>
+              <tr>
+                <td scope="row" class="ff-pl-8">
+                  <div class="fdcp-standings-group_teamCell__JgYej">
+                    <div class="fdcp-standings-group_teamLogo__1iFVT">
+                      <img decoding="async" loading="lazy" height="auto" width="100%" src="assets/img/wal.avif" alt="" title="" class="image_img__3ckHZ">
+                      <span>WAL</span>
+                    </div>
+                  <div>
+                  </td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+                <td><b>0</b></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="col-md-4">
+          <table class="table caption-top">
+            <caption style="color:black;">Grupo C</caption>
+            <thead>
+              <tr>
+                <th style="font-size: 13px;">Equipo</th>
+                <th class="span-c" scope="col"><span>PJ</span></th>
+                <th class="span-c" scope="col"><span>G</span></th>
+                <th class="span-c" scope="col"><span>E</span></th>
+                <th class="span-c" scope="col"><span>P</span></th>
+                <th class="span-c" scope="col"><span>DG</span></th>
+                <th class="span-c" scope="col"><span>Pts</span></th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td scope="row" class="ff-pl-8">
+                  <div class="fdcp-standings-group_teamCell__JgYej">
+                    <div class="fdcp-standings-group_teamLogo__1iFVT">
+                      <img decoding="async" loading="lazy" height="auto" width="100%" src="assets/img/arg.avif" alt="" title="" class="image_img__3ckHZ">
+                      <span>ARG</span>
+                    </div>
+                  <div>
+                  </td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+                <td><b>0</b></td>
+              </tr>
+              <tr>
+                <td scope="row" class="ff-pl-8">
+                  <div class="fdcp-standings-group_teamCell__JgYej">
+                    <div class="fdcp-standings-group_teamLogo__1iFVT">
+                      <img decoding="async" loading="lazy" height="auto" width="100%" src="assets/img/mex.avif" alt="" title="" class="image_img__3ckHZ">
+                      <span>MEX</span>
+                    </div>
+                  <div>
+                  </td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+                <td><b>0</b></td>
+              </tr>
+              <tr>
+                <td scope="row" class="ff-pl-8">
+                  <div class="fdcp-standings-group_teamCell__JgYej">
+                    <div class="fdcp-standings-group_teamLogo__1iFVT">
+                      <img decoding="async" loading="lazy" height="auto" width="100%" src="assets/img/pol.webp" alt="" title="" class="image_img__3ckHZ">
+                      <span>POL</span>
+                    </div>
+                  <div>
+                  </td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+                <td><b>0</b></td>
+              </tr>
+              <tr>
+                <td scope="row" class="ff-pl-8">
+                  <div class="fdcp-standings-group_teamCell__JgYej">
+                    <div class="fdcp-standings-group_teamLogo__1iFVT">
+                      <img decoding="async" loading="lazy" height="auto" width="100%" src="assets/img/ksa.avif" alt="" title="" class="image_img__3ckHZ">
+                      <span>KSA</span>
+                    </div>
+                  <div>
+                  </td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+                <td><b>0</b></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-4">
+          <table class="table caption-top">
+            <caption style="color:black;">Grupo D</caption>
+            <thead>
+              <tr>
+                <th style="font-size: 13px;">Equipo</th>
+                <th class="span-c" scope="col"><span>PJ</span></th>
+                <th class="span-c" scope="col"><span>G</span></th>
+                <th class="span-c" scope="col"><span>E</span></th>
+                <th class="span-c" scope="col"><span>P</span></th>
+                <th class="span-c" scope="col"><span>DG</span></th>
+                <th class="span-c" scope="col"><span>Pts</span></th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td scope="row" class="ff-pl-8">
+                  <div class="fdcp-standings-group_teamCell__JgYej">
+                    <div class="fdcp-standings-group_teamLogo__1iFVT">
+                      <img decoding="async" loading="lazy" height="auto" width="100%" src="assets/img/AUS.avif" alt="" title="" class="image_img__3ckHZ">
+                      <span>AUS</span>
+                    </div>
+                  <div>
+                  </td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+                <td><b>0</b></td>
+              </tr>
+              <tr>
+                <td scope="row" class="ff-pl-8">
+                  <div class="fdcp-standings-group_teamCell__JgYej">
+                    <div class="fdcp-standings-group_teamLogo__1iFVT">
+                      <img decoding="async" loading="lazy" height="auto" width="100%" src="assets/img/den.avif" alt="" title="" class="image_img__3ckHZ">
+                      <span>DEN</span>
+                    </div>
+                  <div>
+                  </td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+                <td><b>0</b></td>
+              </tr>
+              <tr>
+                <td scope="row" class="ff-pl-8">
+                  <div class="fdcp-standings-group_teamCell__JgYej">
+                    <div class="fdcp-standings-group_teamLogo__1iFVT">
+                      <img decoding="async" loading="lazy" height="auto" width="100%" src="assets/img/fra.webp" alt="" title="" class="image_img__3ckHZ">
+                      <span>FRA</span>
+                    </div>
+                  <div>
+                  </td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+                <td><b>0</b></td>
+              </tr>
+              <tr>
+                <td scope="row" class="ff-pl-8">
+                  <div class="fdcp-standings-group_teamCell__JgYej">
+                    <div class="fdcp-standings-group_teamLogo__1iFVT">
+                      <img decoding="async" loading="lazy" height="auto" width="100%" src="assets/img/tu.avif" alt="" title="" class="image_img__3ckHZ">
+                      <span>TUN</span>
+                    </div>
+                  <div>
+                  </td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+                <td><b>0</b></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="col-md-4">
+          <table class="table caption-top">
+            <caption style="color:black;">Grupo E</caption>
+            <thead>
+              <tr>
+                <th style="font-size: 13px;">Equipo</th>
+                <th class="span-c" scope="col"><span>PJ</span></th>
+                <th class="span-c" scope="col"><span>G</span></th>
+                <th class="span-c" scope="col"><span>E</span></th>
+                <th class="span-c" scope="col"><span>P</span></th>
+                <th class="span-c" scope="col"><span>DG</span></th>
+                <th class="span-c" scope="col"><span>Pts</span></th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td scope="row" class="ff-pl-8">
+                  <div class="fdcp-standings-group_teamCell__JgYej">
+                    <div class="fdcp-standings-group_teamLogo__1iFVT">
+                      <img decoding="async" loading="lazy" height="auto" width="100%" src="assets/img/crc.webp" alt="" title="" class="image_img__3ckHZ">
+                      <span>CRC</span>
+                    </div>
+                  <div>
+                  </td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+                <td><b>0</b></td>
+              </tr>
+              <tr>
+                <td scope="row" class="ff-pl-8">
+                  <div class="fdcp-standings-group_teamCell__JgYej">
+                    <div class="fdcp-standings-group_teamLogo__1iFVT">
+                      <img decoding="async" loading="lazy" height="auto" width="100%" src="assets/img/ger.webp" alt="" title="" class="image_img__3ckHZ">
+                      <span>GER</span>
+                    </div>
+                  <div>
+                  </td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+                <td><b>0</b></td>
+              </tr>
+              <tr>
+                <td scope="row" class="ff-pl-8">
+                  <div class="fdcp-standings-group_teamCell__JgYej">
+                    <div class="fdcp-standings-group_teamLogo__1iFVT">
+                      <img decoding="async" loading="lazy" height="auto" width="100%" src="assets/img/jpn.avif" alt="" title="" class="image_img__3ckHZ">
+                      <span>JPN</span>
+                    </div>
+                  <div>
+                  </td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+                <td><b>0</b></td>
+              </tr>
+              <tr>
+                <td scope="row" class="ff-pl-8">
+                  <div class="fdcp-standings-group_teamCell__JgYej">
+                    <div class="fdcp-standings-group_teamLogo__1iFVT">
+                      <img decoding="async" loading="lazy" height="auto" width="100%" src="assets/img/esp.avif" alt="" title="" class="image_img__3ckHZ">
+                      <span>ESP</span>
+                    </div>
+                  <div>
+                  </td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+                <td><b>0</b></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="col-md-4">
+          <table class="table caption-top">
+            <caption style="color:black;">Grupo F</caption>
+            <thead>
+              <tr>
+                <th style="font-size: 13px;">Equipo</th>
+                <th class="span-c" scope="col"><span>PJ</span></th>
+                <th class="span-c" scope="col"><span>G</span></th>
+                <th class="span-c" scope="col"><span>E</span></th>
+                <th class="span-c" scope="col"><span>P</span></th>
+                <th class="span-c" scope="col"><span>DG</span></th>
+                <th class="span-c" scope="col"><span>Pts</span></th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td scope="row" class="ff-pl-8">
+                  <div class="fdcp-standings-group_teamCell__JgYej">
+                    <div class="fdcp-standings-group_teamLogo__1iFVT">
+                      <img decoding="async" loading="lazy" height="auto" width="100%" src="assets/img/bel.webp" alt="" title="" class="image_img__3ckHZ">
+                      <span>BEL</span>
+                    </div>
+                  <div>
+                  </td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+                <td><b>0</b></td>
+              </tr>
+              <tr>
+                <td scope="row" class="ff-pl-8">
+                  <div class="fdcp-standings-group_teamCell__JgYej">
+                    <div class="fdcp-standings-group_teamLogo__1iFVT">
+                      <img decoding="async" loading="lazy" height="auto" width="100%" src="assets/img/can.avif" alt="" title="" class="image_img__3ckHZ">
+                      <span>CAN</span>
+                    </div>
+                  <div>
+                  </td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+                <td><b>0</b></td>
+              </tr>
+              <tr>
+                <td scope="row" class="ff-pl-8">
+                  <div class="fdcp-standings-group_teamCell__JgYej">
+                    <div class="fdcp-standings-group_teamLogo__1iFVT">
+                      <img decoding="async" loading="lazy" height="auto" width="100%" src="assets/img/cro.avif" alt="" title="" class="image_img__3ckHZ">
+                      <span>CRO</span>
+                    </div>
+                  <div>
+                  </td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+                <td><b>0</b></td>
+              </tr>
+              <tr>
+                <td scope="row" class="ff-pl-8">
+                  <div class="fdcp-standings-group_teamCell__JgYej">
+                    <div class="fdcp-standings-group_teamLogo__1iFVT">
+                      <img decoding="async" loading="lazy" height="auto" width="100%" src="assets/img/mar.webp" alt="" title="" class="image_img__3ckHZ">
+                      <span>MAR</span>
+                    </div>
+                  <div>
+                  </td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+                <td><b>0</b></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-4">
+          <table class="table caption-top">
+            <caption style="color:black;">Grupo G</caption>
+            <thead>
+              <tr>
+                <th style="font-size: 13px;">Equipo</th>
+                <th class="span-c" scope="col"><span>PJ</span></th>
+                <th class="span-c" scope="col"><span>G</span></th>
+                <th class="span-c" scope="col"><span>E</span></th>
+                <th class="span-c" scope="col"><span>P</span></th>
+                <th class="span-c" scope="col"><span>DG</span></th>
+                <th class="span-c" scope="col"><span>Pts</span></th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td scope="row" class="ff-pl-8">
+                  <div class="fdcp-standings-group_teamCell__JgYej">
+                    <div class="fdcp-standings-group_teamLogo__1iFVT">
+                      <img decoding="async" loading="lazy" height="auto" width="100%" src="assets/img/BRA.avif" alt="" title="" class="image_img__3ckHZ">
+                      <span>BRA</span>
+                    </div>
+                  <div>
+                  </td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+                <td><b>0</b></td>
+              </tr>
+              <tr>
+                <td scope="row" class="ff-pl-8">
+                  <div class="fdcp-standings-group_teamCell__JgYej">
+                    <div class="fdcp-standings-group_teamLogo__1iFVT">
+                      <img decoding="async" loading="lazy" height="auto" width="100%" src="assets/img/cmr.avif" alt="" title="" class="image_img__3ckHZ">
+                      <span>CMR</span>
+                    </div>
+                  <div>
+                  </td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+                <td><b>0</b></td>
+              </tr>
+              <tr>
+                <td scope="row" class="ff-pl-8">
+                  <div class="fdcp-standings-group_teamCell__JgYej">
+                    <div class="fdcp-standings-group_teamLogo__1iFVT">
+                      <img decoding="async" loading="lazy" height="auto" width="100%" src="assets/img/srb.png" alt="" title="" class="image_img__3ckHZ">
+                      <span>SRB</span>
+                    </div>
+                  <div>
+                  </td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+                <td><b>0</b></td>
+              </tr>
+              <tr>
+                <td scope="row" class="ff-pl-8">
+                  <div class="fdcp-standings-group_teamCell__JgYej">
+                    <div class="fdcp-standings-group_teamLogo__1iFVT">
+                      <img decoding="async" loading="lazy" height="auto" width="100%" src="assets/img/sui.avif" alt="" title="" class="image_img__3ckHZ">
+                      <span>SUI</span>
+                    </div>
+                  <div>
+                  </td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+                <td><b>0</b></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="col-md-4">
+          <table class="table caption-top">
+            <caption style="color:black;">Grupo H</caption>
+            <thead>
+              <tr>
+                <th style="font-size: 13px;">Equipo</th>
+                <th class="span-c" scope="col"><span>PJ</span></th>
+                <th class="span-c" scope="col"><span>G</span></th>
+                <th class="span-c" scope="col"><span>E</span></th>
+                <th class="span-c" scope="col"><span>P</span></th>
+                <th class="span-c" scope="col"><span>DG</span></th>
+                <th class="span-c" scope="col"><span>Pts</span></th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td scope="row" class="ff-pl-8">
+                  <div class="fdcp-standings-group_teamCell__JgYej">
+                    <div class="fdcp-standings-group_teamLogo__1iFVT">
+                      <img decoding="async" loading="lazy" height="auto" width="100%" src="assets/img/gha.avif" alt="" title="" class="image_img__3ckHZ">
+                      <span>GHA</span>
+                    </div>
+                  <div>
+                  </td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+                <td><b>0</b></td>
+              </tr>
+              <tr>
+                <td scope="row" class="ff-pl-8">
+                  <div class="fdcp-standings-group_teamCell__JgYej">
+                    <div class="fdcp-standings-group_teamLogo__1iFVT">
+                      <img decoding="async" loading="lazy" height="auto" width="100%" src="assets/img/kor.avif" alt="" title="" class="image_img__3ckHZ">
+                      <span>KOR</span>
+                    </div>
+                  <div>
+                  </td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+                <td><b>0</b></td>
+              </tr>
+              <tr>
+                <td scope="row" class="ff-pl-8">
+                  <div class="fdcp-standings-group_teamCell__JgYej">
+                    <div class="fdcp-standings-group_teamLogo__1iFVT">
+                      <img decoding="async" loading="lazy" height="auto" width="100%" src="assets/img/por.avif" alt="" title="" class="image_img__3ckHZ">
+                      <span>POR</span>
+                    </div>
+                  <div>
+                  </td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+                <td><b>0</b></td>
+              </tr>
+              <tr>
+                <td scope="row" class="ff-pl-8">
+                  <div class="fdcp-standings-group_teamCell__JgYej">
+                    <div class="fdcp-standings-group_teamLogo__1iFVT">
+                      <img decoding="async" loading="lazy" height="auto" width="100%" src="assets/img/uru.avif" alt="" title="" class="image_img__3ckHZ">
+                      <span>URU</span>
+                    </div>
+                  <div>
+                  </td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+                <td><b>0</b></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+    <div id="participantes" class="head-noticias3 text-center">
+      <div class="son">
+        <h2>Participantes</h2>
+      </div>
+    </div>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-2 col-12 col-sm-12">
+          <img src="assets/img/arg.avif" class="img-fluid" alt="Responsive image">
+          <div class="flag-with-info_flagInfo__3MPlV">
+            <div class="flag-with-info_flagCountry__Yw8QR">
+              Argentina
+              <div class="flag-with-info_flagAbbr__Dn4Ab">
+                (
+                  ARG
+                )
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-2 col-12 col-sm-12">
+          <img src="assets/img/AUS.avif" class="img-fluid" alt="Responsive image">
+          <div class="flag-with-info_flagInfo__3MPlV">
+            <div class="flag-with-info_flagCountry__Yw8QR">
+              Australia
+              <div class="flag-with-info_flagAbbr__Dn4Ab">
+                (
+                  AUS
+                )
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-2 col-12 col-sm-12">
+          <img src="assets/img/bel.webp" class="img-fluid" alt="Responsive image">
+          <div class="flag-with-info_flagInfo__3MPlV">
+            <div class="flag-with-info_flagCountry__Yw8QR">
+              Bélgica
+              <div class="flag-with-info_flagAbbr__Dn4Ab">
+                (
+                  BEL
+                )
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-2 col-12 col-sm-12">
+          <img src="assets/img/BRA.avif" class="img-fluid" alt="Responsive image">
+          <div class="flag-with-info_flagInfo__3MPlV">
+            <div class="flag-with-info_flagCountry__Yw8QR">
+              Brasil
+              <div class="flag-with-info_flagAbbr__Dn4Ab">
+                (
+                  BRA
+                )
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-2 col-12 col-sm-12">
+          <img src="assets/img/cmr.avif" class="img-fluid" alt="Responsive image">
+          <div class="flag-with-info_flagInfo__3MPlV">
+            <div class="flag-with-info_flagCountry__Yw8QR">
+              Camerún
+              <div class="flag-with-info_flagAbbr__Dn4Ab">
+                (
+                  CMR
+                )
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-2 col-12 col-sm-12">
+          <img src="assets/img/can.avif" class="img-fluid" alt="Responsive image">
+          <div class="flag-with-info_flagInfo__3MPlV">
+            <div class="flag-with-info_flagCountry__Yw8QR">
+              Canada
+              <div class="flag-with-info_flagAbbr__Dn4Ab">
+                (
+                  CAN
+                )
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-2 col-12 col-sm-12">
+          <img src="assets/img/crc.webp" class="img-fluid" alt="Responsive image">
+          <div class="flag-with-info_flagInfo__3MPlV">
+            <div class="flag-with-info_flagCountry__Yw8QR">
+              Costa Rica
+              <div class="flag-with-info_flagAbbr__Dn4Ab">
+                (
+                  CRC
+                )
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-2 col-12 col-sm-12">
+          <img src="assets/img/cro.avif" class="img-fluid" alt="Responsive image">
+          <div class="flag-with-info_flagInfo__3MPlV">
+            <div class="flag-with-info_flagCountry__Yw8QR">
+              Croacia
+              <div class="flag-with-info_flagAbbr__Dn4Ab">
+                (
+                  CRO
+                )
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-2 col-12 col-sm-12">
+          <img src="assets/img/den.avif" class="img-fluid" alt="Responsive image">
+          <div class="flag-with-info_flagInfo__3MPlV">
+            <div class="flag-with-info_flagCountry__Yw8QR">
+              Dinamarca
+              <div class="flag-with-info_flagAbbr__Dn4Ab">
+                (
+                  DEN
+                )
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-2 col-12 col-sm-12">
+          <img src="assets/img/ecuador.avif" class="img-fluid" alt="Responsive image">
+          <div class="flag-with-info_flagInfo__3MPlV">
+            <div class="flag-with-info_flagCountry__Yw8QR">
+              Ecuador
+              <div class="flag-with-info_flagAbbr__Dn4Ab">
+                (
+                  ECU
+                )
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-2 col-12 col-sm-12">
+          <img src="assets/img/eng.webp" class="img-fluid" alt="Responsive image">
+          <div class="flag-with-info_flagInfo__3MPlV">
+            <div class="flag-with-info_flagCountry__Yw8QR">
+              Inglaterra
+              <div class="flag-with-info_flagAbbr__Dn4Ab">
+                (
+                  ENG
+                )
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-2 col-12 col-sm-12">
+          <img src="assets/img/fra.webp" class="img-fluid" alt="Responsive image">
+          <div class="flag-with-info_flagInfo__3MPlV">
+            <div class="flag-with-info_flagCountry__Yw8QR">
+              Francia
+              <div class="flag-with-info_flagAbbr__Dn4Ab">
+                (
+                  FRA
+                )
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-2 col-12 col-sm-12">
+          <img src="assets/img/ger.webp" class="img-fluid" alt="Responsive image">
+          <div class="flag-with-info_flagInfo__3MPlV">
+            <div class="flag-with-info_flagCountry__Yw8QR">
+              Alemania
+              <div class="flag-with-info_flagAbbr__Dn4Ab">
+                (
+                  GER
+                )
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-2 col-12 col-sm-12">
+          <img src="assets/img/gha.avif" class="img-fluid" alt="Responsive image">
+          <div class="flag-with-info_flagInfo__3MPlV">
+            <div class="flag-with-info_flagCountry__Yw8QR">
+              Ghana
+              <div class="flag-with-info_flagAbbr__Dn4Ab">
+                (
+                  GHA
+                )
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-2 col-12 col-sm-12">
+          <img src="assets/img/iran.avif" class="img-fluid" alt="Responsive image">
+          <div class="flag-with-info_flagInfo__3MPlV">
+            <div class="flag-with-info_flagCountry__Yw8QR">
+              Irán
+              <div class="flag-with-info_flagAbbr__Dn4Ab">
+                (
+                  IRN
+                )
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-2 col-12 col-sm-12">
+          <img src="assets/img/jpn.avif" class="img-fluid" alt="Responsive image">
+          <div class="flag-with-info_flagInfo__3MPlV">
+            <div class="flag-with-info_flagCountry__Yw8QR">
+              Japón
+              <div class="flag-with-info_flagAbbr__Dn4Ab">
+                (
+                  JPN
+                )
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-2 col-12 col-sm-12">
+          <img src="assets/img/kor.avif" class="img-fluid" alt="Responsive image">
+          <div class="flag-with-info_flagInfo__3MPlV">
+            <div class="flag-with-info_flagCountry__Yw8QR">
+              Corea del Sur
+              <div class="flag-with-info_flagAbbr__Dn4Ab">
+                (
+                  KOR
+                )
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-2 col-12 col-sm-12">
+          <img src="assets/img/mex.avif" class="img-fluid" alt="Responsive image">
+          <div class="flag-with-info_flagInfo__3MPlV">
+            <div class="flag-with-info_flagCountry__Yw8QR">
+              México
+              <div class="flag-with-info_flagAbbr__Dn4Ab">
+                (
+                  MEX
+                )
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-2 col-12 col-sm-12">
+          <img src="assets/img/mar.webp" class="img-fluid" alt="Responsive image">
+          <div class="flag-with-info_flagInfo__3MPlV">
+            <div class="flag-with-info_flagCountry__Yw8QR">
+              Marruecos
+              <div class="flag-with-info_flagAbbr__Dn4Ab">
+                (
+                  MAR
+                )
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-2 col-12 col-sm-12">
+          <img src="assets/img/paisesbajos.webp" class="img-fluid" alt="Responsive image">
+          <div class="flag-with-info_flagInfo__3MPlV">
+            <div class="flag-with-info_flagCountry__Yw8QR">
+              Países Bajos
+              <div class="flag-with-info_flagAbbr__Dn4Ab">
+                (
+                  NED
+                )
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-2 col-12 col-sm-12">
+          <img src="assets/img/pol.webp" class="img-fluid" alt="Responsive image">
+          <div class="flag-with-info_flagInfo__3MPlV">
+            <div class="flag-with-info_flagCountry__Yw8QR">
+              Polonia
+              <div class="flag-with-info_flagAbbr__Dn4Ab">
+                (
+                  POL
+                )
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-2 col-12 col-sm-12">
+          <img src="assets/img/por.avif" class="img-fluid" alt="Responsive image">
+          <div class="flag-with-info_flagInfo__3MPlV">
+            <div class="flag-with-info_flagCountry__Yw8QR">
+              Portugal
+              <div class="flag-with-info_flagAbbr__Dn4Ab">
+                (
+                  POR
+                )
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-2 col-12 col-sm-12">
+          <img src="assets/img/catar.avif" class="img-fluid" alt="Responsive image">
+          <div class="flag-with-info_flagInfo__3MPlV">
+            <div class="flag-with-info_flagCountry__Yw8QR">
+              Catar
+              <div class="flag-with-info_flagAbbr__Dn4Ab">
+                (
+                  QAT
+                )
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-2 col-12 col-sm-12">
+          <img src="assets/img/ksa.avif" class="img-fluid" alt="Responsive image">
+          <div class="flag-with-info_flagInfo__3MPlV">
+            <div class="flag-with-info_flagCountry__Yw8QR">
+              Arabia Saudí
+              <div class="flag-with-info_flagAbbr__Dn4Ab">
+                (
+                  KSA
+                )
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-2 col-12 col-sm-12">
+          <img src="assets/img/senegal.avif" class="img-fluid" alt="Responsive image">
+          <div class="flag-with-info_flagInfo__3MPlV">
+            <div class="flag-with-info_flagCountry__Yw8QR">
+              Senegal
+              <div class="flag-with-info_flagAbbr__Dn4Ab">
+                (
+                  SEN
+                )
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-2 col-12 col-sm-12">
+          <img src="assets/img/srb.png" class="img-fluid" alt="Responsive image">
+          <div class="flag-with-info_flagInfo__3MPlV">
+            <div class="flag-with-info_flagCountry__Yw8QR">
+              Serbia
+              <div class="flag-with-info_flagAbbr__Dn4Ab">
+                (
+                  SRB
+                )
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-2 col-12 col-sm-12">
+          <img src="assets/img/esp.avif" class="img-fluid" alt="Responsive image">
+          <div class="flag-with-info_flagInfo__3MPlV">
+            <div class="flag-with-info_flagCountry__Yw8QR">
+              España
+              <div class="flag-with-info_flagAbbr__Dn4Ab">
+                (
+                  ESP
+                )
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-2 col-12 col-sm-12">
+          <img src="assets/img/sui.avif" class="img-fluid" alt="Responsive image">
+          <div class="flag-with-info_flagInfo__3MPlV">
+            <div class="flag-with-info_flagCountry__Yw8QR">
+              Suiza
+              <div class="flag-with-info_flagAbbr__Dn4Ab">
+                (
+                  SUI
+                )
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-2 col-12 col-sm-12">
+          <img src="assets/img/tu.avif" class="img-fluid" alt="Responsive image">
+          <div class="flag-with-info_flagInfo__3MPlV">
+            <div class="flag-with-info_flagCountry__Yw8QR">
+              Túnez
+              <div class="flag-with-info_flagAbbr__Dn4Ab">
+                (
+                  TUN
+                )
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-2 col-12 col-sm-12">
+          <img src="assets/img/usa.avif" class="img-fluid" alt="Responsive image">
+          <div class="flag-with-info_flagInfo__3MPlV">
+            <div class="flag-with-info_flagCountry__Yw8QR">
+              Estados Unidos
+              <div class="flag-with-info_flagAbbr__Dn4Ab">
+                (
+                  USA
+                )
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-2 col-12 col-sm-12">
+          <img src="assets/img/uru.avif" class="img-fluid" alt="Responsive image">
+          <div class="flag-with-info_flagInfo__3MPlV">
+            <div class="flag-with-info_flagCountry__Yw8QR">
+              Uruguay
+              <div class="flag-with-info_flagAbbr__Dn4Ab">
+                (
+                  URU
+                )
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-2 col-12 col-sm-12">
+          <img src="assets/img/wal.avif" class="img-fluid" alt="Responsive image">
+          <div class="flag-with-info_flagInfo__3MPlV">
+            <div class="flag-with-info_flagCountry__Yw8QR">
+              Gales
+              <div class="flag-with-info_flagAbbr__Dn4Ab">
+                (
+                  WAL
+                )
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+    </div>
+  </div>
+  <!-- Footer -->
+<footer id="contacto" class=" text-center text-white" style="background-color: #460065;">
+  <!-- Grid container -->
+  <div class="container p-4">
+    <!-- Section: Social media -->
+    <section class="mb-4">
+      <!-- Facebook -->
+      <a class="btn px-3 me-2 " style="color: #ffe484; background-color: none; border: solid 1px #ffe484 ;" href="https://es-la.facebook.com/fifaworldcup/" target="_blank" role="button"
+        ><span><i class="fab fa-facebook-f"></i
+          ></span></a>
+
+      <!-- Twitter -->
+      <a class="btn px-3 me-2 " style="color: #ffe484; background-color: none; border: solid 1px #ffe484 ;" href="https://twitter.com/fifacom?lang=es" target="_blank" role="button"
+        ><span><i class="fab fa-twitter"></i
+          ></span></a>
+
+      <!-- Google -->
+      <a class="btn px-3 me-2 " target="_blank" style="color: #ffe484; background-color: none; border: solid 1px #ffe484 ;" href="#inicio" role="button"
+        ><span><i class="fab fa-google"></i
+          ></span></a>
+
+      <!-- Instagram -->
+      <a class="btn px-3 me-2 " target="_blank" style="color: #ffe484; background-color: none; border: solid 1px #ffe484 ;" href="https://www.instagram.com/fifaworldcup/?hl=es" role="button"
+        ><span><i class="fab fa-instagram"></i
+          ></span></a>
+    </section>
+   
+
+    <!-- Section: Form -->
+    <section class="">
+      <form action="">
+        <!--Grid row-->
+        <div class="row d-flex justify-content-center">
+          <!--Grid column-->
+          <div class="col-auto">
+            <p class="pt-2">
+              <strong>Subscribe a Fifa +</strong>
+            </p>
+          </div>
+          <!--Grid column-->
+
+          <!--Grid column-->
+          <div class="col-md-5 col-12">
+            <!-- Email input -->
+            <div class="form-outline form-white mb-4">
+              <input type="email" id="email-field" class="form-control" placeholder="Ingresa tu correo" onkeyup="validateEmail();" required/>
+              <span id="email-error"></span>
+            </div>
+          </div>
+          <!--Grid column-->
+
+          <!--Grid column-->
+          <div class="col-auto">
+            <!-- Submit button -->
+            <button type="button" onclick="validateEmail()" class="btn px-3 me-2" style="color: #ffe484; background-color: none; border: solid 1px #ffe484 ;">
+              <span>Suscribete</span>
+            </button>
+          </div>
+          <!--Grid column-->
+        </div>
+        <!--Grid row-->
+      </form>
+    </section>
+    <!-- Section: Form -->
+
+    <!-- Section: Text -->
+    <section class="mb-4">
+      <p>
+        La FIFA existe para gobernar el fútbol y desarrollar el juego en todo el mundo. Desde 2016, la organización ha evolucionado rápidamente hasta convertirse en un organismo que puede servir de manera más eficaz al fútbol en beneficio de todo el mundo. <br> <br>
+        Fifa Company All Rights Reserved 1904-2022 ©
+      </p>
+    </section>
+    <!-- Section: Text -->
+
+    <!-- Section: Links -->
+    <section class="">
+      
+    </section>
+    <!-- Section: Links -->
+  </div>
+  <!-- Grid container -->
+
+  <!-- Copyright -->
+  <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+    <a class="navbar-brand" href="#inicio">
+      <img src="assets/img/logo2.webp" alt="Bootstrap" width="auto" height="40px">
+    </a>
+  </div>
+  <!-- Copyright -->
+</footer>
+<!-- Footer -->
+
+  <!-- jQuery CDN -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js" integrity="sha512-aVKKRRi/Q/YV+4mjoKBsE4x3H+BkegoM/em46NNlCqNTmUYADjBbeNefNxYV7giUp0VxICtqdrbqU7iVaeZNXA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+  <!-- JavaScript Bundle with Popper -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+
+  <!-- 1. Owl Carousel Min .js  -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+  <!-- Init Carousel -->
+  <script>
+      $('.owl-carousel').owlCarousel({
+      loop:true,
+      margin:10,
+      nav:true,
+      responsive:{
+          0:{
+              items:1
+          },
+          600:{
+              items:3
+          },
+          1000:{
+              items:5
+          }
+      }
+  })
+  </script>
+  <script src="assets/js/validations.js"></script>
+  
+</body>
+</html>
